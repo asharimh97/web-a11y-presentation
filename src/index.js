@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 
 import {
   FlexBox,
@@ -22,18 +22,19 @@ import {
   CodePane,
   MarkdownSlide,
   MarkdownSlideSet,
-  Notes
-} from 'spectacle';
+  Notes,
+} from "spectacle";
+import Thanks from "./slides/thanks";
 
 const formidableLogo =
-  'https://avatars2.githubusercontent.com/u/5078602?s=280&v=4';
+  "https://avatars2.githubusercontent.com/u/5078602?s=280&v=4";
 
 // SPECTACLE_CLI_THEME_START
 const theme = {
   fonts: {
     header: '"Open Sans Condensed", Helvetica, Arial, sans-serif',
-    text: '"Open Sans Condensed", Helvetica, Arial, sans-serif'
-  }
+    text: '"Open Sans Condensed", Helvetica, Arial, sans-serif',
+  },
 };
 // SPECTACLE_CLI_THEME_END
 
@@ -102,17 +103,17 @@ const Presentation = () => (
     <Slide
       transition={{
         from: {
-          transform: 'scale(0.5) rotate(45deg)',
-          opacity: 0
+          transform: "scale(0.5) rotate(45deg)",
+          opacity: 0,
         },
         enter: {
-          transform: 'scale(1) rotate(0)',
-          opacity: 1
+          transform: "scale(1) rotate(0)",
+          opacity: 1,
         },
         leave: {
-          transform: 'scale(0.2) rotate(315deg)',
-          opacity: 0
-        }
+          transform: "scale(0.2) rotate(315deg)",
+          opacity: 0,
+        },
       }}
       backgroundColor="tertiary"
       backgroundImage="url(https://github.com/FormidableLabs/dogs/blob/main/src/beau.jpg?raw=true)"
@@ -179,7 +180,7 @@ const Presentation = () => (
         gridRowGap={1}
       >
         {Array(9)
-          .fill('')
+          .fill("")
           .map((_, index) => (
             <FlexBox paddingTop={0} key={`formidable-logo-${index}`} flex={1}>
               <Image src={formidableLogo} width={100} />
@@ -214,7 +215,7 @@ const Presentation = () => (
         <Heading>This is a slide embedded in a div</Heading>
       </Slide>
     </div>
-    <MarkdownSlide componentProps={{ color: 'yellow' }}>
+    <MarkdownSlide componentProps={{ color: "yellow" }}>
       {`
         # This is a Markdown Slide
 
@@ -233,32 +234,6 @@ const Presentation = () => (
        - ...one at a time.
       `}
     </MarkdownSlide>
-    <Slide>
-      <Grid
-        flex={1}
-        gridTemplateColumns="50% 50%"
-        gridTemplateRows="50% 50%"
-        height="100%"
-      >
-        <FlexBox alignItems="center" justifyContent="center">
-          <Heading>This is a 4x4 Grid</Heading>
-        </FlexBox>
-        <FlexBox alignItems="center" justifyContent="center">
-          <Text textAlign="center">
-            With all the content aligned and justified center.
-          </Text>
-        </FlexBox>
-        <FlexBox alignItems="center" justifyContent="center">
-          <Text textAlign="center">
-            It uses Spectacle <CodeSpan>{'<Grid />'}</CodeSpan> and{' '}
-            <CodeSpan>{'<FlexBox />'}</CodeSpan> components.
-          </Text>
-        </FlexBox>
-        <FlexBox alignItems="center" justifyContent="center">
-          <Box width={200} height={200} backgroundColor="secondary" />
-        </FlexBox>
-      </Grid>
-    </Slide>
     <MarkdownSlideSet>
       {`
         # This is the first slide of a Markdown Slide Set
@@ -266,7 +241,8 @@ const Presentation = () => (
         # This is the second slide of a Markdown Slide Set
         `}
     </MarkdownSlideSet>
+    <Thanks />
   </Deck>
 );
 
-ReactDOM.render(<Presentation />, document.getElementById('root'));
+ReactDOM.render(<Presentation />, document.getElementById("root"));
