@@ -24,6 +24,8 @@ import {
   MarkdownSlideSet,
   Notes,
 } from "spectacle";
+import Opening from "./slides/opening";
+import TechStack from "./slides/tech-stacks";
 import Thanks from "./slides/thanks";
 
 const formidableLogo =
@@ -32,8 +34,9 @@ const formidableLogo =
 // SPECTACLE_CLI_THEME_START
 const theme = {
   fonts: {
-    header: '"Open Sans Condensed", Helvetica, Arial, sans-serif',
-    text: '"Open Sans Condensed", Helvetica, Arial, sans-serif',
+    header: '"Signika", Helvetica, Arial, sans-serif',
+    text: '"PT Sans", Helvetica, Arial, sans-serif',
+    serif: '"Alegreya", Georgia, serif',
   },
 };
 // SPECTACLE_CLI_THEME_END
@@ -87,19 +90,8 @@ const Presentation = () => (
         </ol>
       </Notes>
     </Slide>
-    <Slide>
-      <FlexBox height="100%" flexDirection="column">
-        <Heading margin="0px" fontSize="150px">
-          ✨<i>Spectacle</i> ✨
-        </Heading>
-        <Heading margin="0px" fontSize="h2">
-          A ReactJS Presentation Library
-        </Heading>
-        <Heading margin="0px 32px" color="primary" fontSize="h3">
-          Where you can write your decks in JSX, Markdown, or MDX!
-        </Heading>
-      </FlexBox>
-    </Slide>
+    <Opening />
+    <TechStack />
     <Slide
       transition={{
         from: {
