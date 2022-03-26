@@ -27,7 +27,7 @@ function Thanks() {
       <Heading>Terima kasih</Heading>
       <Box width="650px" marginX="auto">
         <Image
-          src="/src/assets/images/tanya.jpg"
+          src="/public/images/tanya.jpg"
           alt="Thank you"
           width="100%"
           style={{ borderRadius: "10px" }}

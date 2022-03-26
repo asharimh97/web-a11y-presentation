@@ -24,7 +24,9 @@ import {
   MarkdownSlideSet,
   Notes,
 } from "spectacle";
+import PeopleWithDisability from "./slides/disability-data";
 import Opening from "./slides/opening";
+import QuoteSlide from "./slides/quote";
 import TechStack from "./slides/tech-stacks";
 import Thanks from "./slides/thanks";
 
@@ -78,20 +80,9 @@ const SlideFragments = () => (
 
 const Presentation = () => (
   <Deck theme={theme} template={template}>
-    <Slide>
-      <FlexBox height="100%">
-        <SpectacleLogo size={500} />
-      </FlexBox>
-      <Notes>
-        Spectacle supports notes per slide.
-        <ol>
-          <li>Notes can now be HTML markup!</li>
-          <li>Lists can make it easier to make points.</li>
-        </ol>
-      </Notes>
-    </Slide>
     <Opening />
     <TechStack />
+    <PeopleWithDisability />
     <Slide
       transition={{
         from: {
@@ -233,6 +224,7 @@ const Presentation = () => (
         # This is the second slide of a Markdown Slide Set
         `}
     </MarkdownSlideSet>
+    <QuoteSlide />
     <Thanks />
   </Deck>
 );

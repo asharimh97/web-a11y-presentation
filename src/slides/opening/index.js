@@ -1,5 +1,5 @@
 import React from "react";
-import { Slide, FlexBox, Heading } from "spectacle";
+import { Slide, Text, FlexBox, Heading } from "spectacle";
 
 function Opening() {
   return (
@@ -11,6 +11,9 @@ function Opening() {
         <Heading margin="0px" fontSize="h2">
           Why it matters
         </Heading>
+        <Text margin="0px" fontSize="24px" fontStyle="italic">
+          Ashari Muhammad H // Web Engineer
+        </Text>
       </FlexBox>
     </Slide>
   );
