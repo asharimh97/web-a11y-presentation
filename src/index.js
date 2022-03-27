@@ -24,6 +24,7 @@ import {
   MarkdownSlideSet,
   Notes,
 } from "spectacle";
+import BasicConcept from "./slides/basic";
 import PeopleWithDisability from "./slides/disability-data";
 import Opening from "./slides/opening";
 import QuoteSlide from "./slides/quote";
@@ -83,6 +84,11 @@ const Presentation = () => (
     <Opening />
     <TechStack />
     <PeopleWithDisability />
+    <BasicConcept />
+    {/* Setelah ini kasih slide gimana orang dengan visual impairment ngeliat website kita */}
+    {/* Guidelinesnya... WCAG dan WebAIM */}
+    {/* Basic nya -> semantic tags dan WAI ARIA */}
+    {/* Benefit dari accessibility */}
     <Slide
       transition={{
         from: {
