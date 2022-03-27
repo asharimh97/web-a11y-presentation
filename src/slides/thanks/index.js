@@ -1,14 +1,5 @@
 import React from "react";
-import {
-  Slide,
-  Grid,
-  Text,
-  Heading,
-  FlexBox,
-  CodeSpan,
-  Box,
-  Image,
-} from "spectacle";
+import { Slide, Text, Heading, Box, Image } from "spectacle";
 import { styled } from "../../configs/stitches.config";
 
 const Button = styled("button", {
