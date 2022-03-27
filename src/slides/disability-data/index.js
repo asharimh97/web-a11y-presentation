@@ -1,7 +1,7 @@
 import React from "react";
 import { FaWheelchair, FaEyeSlash } from "react-icons/fa";
 import { MdHearingDisabled, MdElderly } from "react-icons/md";
-import { Slide, FlexBox, Grid, Text, Heading } from "spectacle";
+import { Slide, FlexBox, Text, Heading } from "spectacle";
 
 function PeopleWithDisability() {
   const datas = [
