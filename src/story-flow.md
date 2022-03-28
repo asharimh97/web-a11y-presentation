@@ -6,8 +6,11 @@
 4. Kasih liat data kalo misal kita implement accessibility tuh kita bakal membantu sekian orang untuk menikmati experience yang sama.
 5. Kasih lihat gimana orang-orang dengan impairment "ngeliat" website kita
 6. Accessibility guidelines ada di WCAG dan WebAIM
+   Jelasin kalo dalam a11y itu ada kelas kelasnya, A, AA, AAA.
 7. Jelasin tentang POUR -> Perceivable, Operable, Understandable, Robust
 8. Nah, sebagai pengantar kita tuh bisa mulai implement accessibility dengan -> implement semantic tags dan WAI ARIA
+   Untuk Semantic -> image ya dikasih alt yang jelas juga kasih caption, button/input dikasih label, etc.
+   Untuk WAI aria, coba kasih contoh implementasi ARIA.
 9. Benefit dari accessibility dari segi bisnis -> SEO, karena requirement untuk accessibility itu overlap sama SEO, dengan implementasi a11y itu kita juga ngeboost SEO performance web kita
 10. what next? more elements...?
 11. Quote
