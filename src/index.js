@@ -14,11 +14,13 @@ import {
 
 import AboutAlly from "./slides/about";
 import BasicConcept from "./slides/basic";
+import Benefit from "./slides/benefit";
 import PeopleWithDisability from "./slides/disability-data";
 import Opening from "./slides/opening";
 import QuoteSlide from "./slides/quote";
 import TechStack from "./slides/tech-stacks";
 import Thanks from "./slides/thanks";
+import Tools from "./slides/tools";
 
 // SPECTACLE_CLI_THEME_START
 const theme = {
@@ -58,6 +60,8 @@ const Presentation = () => (
     {/* Guidelinesnya... WCAG dan WebAIM */}
     {/* Basic nya -> semantic tags dan WAI ARIA */}
     {/* Benefit dari accessibility */}
+    <Benefit />
+    <Tools />
     <QuoteSlide />
     <Thanks />
   </Deck>
