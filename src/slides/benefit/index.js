@@ -15,6 +15,10 @@ function Benefit() {
             Implementasi a11y akan ngeboost SEO, karena rulenya overlap sama SEO
           </li>
           <li>
+            Implementasi a11y yang baik secara enggak langsung juga ngasih user
+            experience yang baik
+          </li>
+          <li>
             Potensi retention, dengan user merasa nyaman untuk pake appnya user
             bisa jadi krasan dan kembali lagi
           </li>
