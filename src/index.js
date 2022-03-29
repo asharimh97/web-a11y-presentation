@@ -17,7 +17,9 @@ import BasicConcept from "./slides/basic";
 import Benefit from "./slides/benefit";
 import PeopleWithDisability from "./slides/disability-data";
 import Opening from "./slides/opening";
+import Pour from "./slides/pour";
 import QuoteSlide from "./slides/quote";
+import Standards from "./slides/standards";
 import TechStack from "./slides/tech-stacks";
 import Thanks from "./slides/thanks";
 import Tools from "./slides/tools";
@@ -55,10 +57,13 @@ const Presentation = () => (
     <TechStack />
     <AboutAlly />
     <PeopleWithDisability />
-    <BasicConcept />
     {/* Setelah ini kasih slide gimana orang dengan visual impairment ngeliat website kita */}
     {/* Guidelinesnya... WCAG dan WebAIM */}
+    <Standards />
+    {/* Jelasin tentang prinsip pour */}
+    <Pour />
     {/* Basic nya -> semantic tags dan WAI ARIA */}
+    <BasicConcept />
     {/* Benefit dari accessibility */}
     <Benefit />
     <Tools />
