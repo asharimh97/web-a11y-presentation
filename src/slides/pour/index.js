@@ -36,7 +36,7 @@ function Pour() {
         </FlexBox>
         <FlexBox justifyContent="center" marginY="32px">
           <Text fontSize="64px" fontWeight="bold" textAlign="center">
-            Undersandable
+            Understandable
           </Text>
         </FlexBox>
       </FlexBox>
