@@ -1,5 +1,5 @@
 import React from "react";
-import { Slide, FlexBox, Heading, Text } from "spectacle";
+import { Slide, FlexBox, Heading, Text, Notes } from "spectacle";
 
 function Standards() {
   return (
@@ -15,6 +15,21 @@ function Standards() {
           The ultimate almanac for web accessibility
         </Text>
       </FlexBox>
+      <Notes>
+        <ul>
+          <li>
+            Jelasin tentang WCAG sebagai guideline implementasi web
+            accessibility
+          </li>
+          <li>Mention tentang ada checklist nya itu ada di WebAIM</li>
+          <li>
+            Mention tentang level accessibility di web, A, AA, AAA. Menurut
+            University of California, minimum web itu harusnya punya
+            accessibility AA. Karena kalo implement AAA di semua page sih emang
+            dirasa susah, not impossible tapi difficult
+          </li>
+        </ul>
+      </Notes>
     </Slide>
   );
 }

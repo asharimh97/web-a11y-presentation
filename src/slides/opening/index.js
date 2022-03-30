@@ -12,7 +12,7 @@ function Opening() {
           Why it matters
         </Heading>
         <Text margin="0px" fontSize="24px" fontStyle="italic">
-          Ashari Muhammad H // Web Engineer
+          Kultum by: Ashari Muhammad H // Web Engineer
         </Text>
       </FlexBox>
     </Slide>
