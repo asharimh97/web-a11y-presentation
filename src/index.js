@@ -66,7 +66,7 @@ const Presentation = () => (
     <BasicConcept />
     {/* Benefit dari accessibility */}
     <Benefit />
-    <Tools />
+    {/* <Tools /> */}
     <QuoteSlide />
     <Thanks />
   </Deck>
