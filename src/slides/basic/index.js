@@ -2,6 +2,7 @@ import React from "react";
 import Semantic from "./semantic";
 import WaiAria from "./aria";
 import Codes from "../codes";
+import WaiAriaCodes from "../wai-aria";
 
 /**
  * Kalo di slide ini poinnya cuma 2:
@@ -15,6 +16,7 @@ function BasicConcept() {
       <Semantic />
       <Codes />
       <WaiAria />
+      <WaiAriaCodes />
     </>
   );
 }
