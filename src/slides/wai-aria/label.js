@@ -17,7 +17,7 @@ function Label() {
   return (
     <Slide>
       <Heading>Label</Heading>
-      <Button>
+      <Button aria-label="Add post">
         <PlusIcon />
       </Button>
       <CodePane language="jsx">{`
@@ -32,6 +32,7 @@ function Label() {
         </button>
 
         // Or sometime we use aria-describedby to add description to components
+        // \`aria-label\` will override alt, title, <label>, so don't overuse it
       `}</CodePane>
       <Notes>
         <ul>
@@ -45,7 +46,10 @@ function Label() {
               WAI-ARIA 1.1: aria-labelledby
             </a>
           </li>
-          <li>Cari component lain yang biasa pake aria-label</li>
+          <li>
+            Component yang biasa pake ini itu button icon, nav, multiple
+            landmark nav, labelles input
+          </li>
         </ul>
       </Notes>
     </Slide>
