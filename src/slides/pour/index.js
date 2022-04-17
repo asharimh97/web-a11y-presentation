@@ -1,5 +1,5 @@
 import React from "react";
-import { Slide, Text, FlexBox, Box } from "spectacle";
+import { Slide, Text, FlexBox, Notes } from "spectacle";
 
 function Pour() {
   return (
@@ -40,6 +40,37 @@ function Pour() {
           </Text>
         </FlexBox>
       </FlexBox>
+      <Notes>
+        <ol>
+          <li>
+            - Perceivable
+            <br />
+            Tuna netra pake screen reader, tuna rungu baca caption, temen-temen
+            dislexia dengan pilihan font, icon, dsb
+          </li>
+          <li>
+            - Operable
+            <br />
+            Interfacenya bisa dioperasikan, misal enggak bisa diinput, diklik,
+            dienter, dsb. Kaitannya pake input
+          </li>
+          <li>
+            - Understandable
+            <br />
+            Kaitannya dengan bagaimana informasi dan instruksi di suatu elemen
+            bisa dipahami oleh user, dari segi bahasa, tata letak, dsb. Ini
+            lebih ke UI/UX nya, jadi bukan ke coding sih. Hehe
+          </li>
+          <li>
+            Robust
+            <br />
+            Bagaimana kita bikin elemen itu enggak cuman untuk suatu pengguna
+            dengan cabang disabilitas tertentu atau assistive tech tertentu.
+            Jadi bisa serve untuk semua user mau pake voice over, screen reader,
+            ataupun pengguna biasa semua bisa mendapatkan experience yang sama.
+          </li>
+        </ol>
+      </Notes>
     </Slide>
   );
 }
